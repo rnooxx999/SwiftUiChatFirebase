@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0ABEBA2C00DF7300BB54BF /* MessageFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ABEB92C00DF7300BB54BF /* MessageFieldView.swift */; };
 		AD441C8D2BFF617B00E2163A /* SwiftUiChatFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD441C8C2BFF617B00E2163A /* SwiftUiChatFirebaseApp.swift */; };
 		AD441C8F2BFF617B00E2163A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD441C8E2BFF617B00E2163A /* ContentView.swift */; };
 		AD441C912BFF617D00E2163A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD441C902BFF617D00E2163A /* Assets.xcassets */; };
 		AD441C942BFF617D00E2163A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD441C932BFF617D00E2163A /* Preview Assets.xcassets */; };
+		AD54C5542BFF7E5100382FB6 /* TitleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54C5532BFF7E5100382FB6 /* TitleRowView.swift */; };
+		AD54C5572BFF882700382FB6 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54C5562BFF882700382FB6 /* MessageModel.swift */; };
+		AD54C5592BFF897C00382FB6 /* MessageBubuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54C5582BFF897C00382FB6 /* MessageBubuleView.swift */; };
+		AD54C55C2BFFC91E00382FB6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD54C55B2BFFC91E00382FB6 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0ABEB92C00DF7300BB54BF /* MessageFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFieldView.swift; sourceTree = "<group>"; };
 		AD441C892BFF617B00E2163A /* SwiftUiChatFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiChatFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD441C8C2BFF617B00E2163A /* SwiftUiChatFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiChatFirebaseApp.swift; sourceTree = "<group>"; };
 		AD441C8E2BFF617B00E2163A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD441C902BFF617D00E2163A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD441C932BFF617D00E2163A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD54C5532BFF7E5100382FB6 /* TitleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRowView.swift; sourceTree = "<group>"; };
+		AD54C5562BFF882700382FB6 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		AD54C5582BFF897C00382FB6 /* MessageBubuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubuleView.swift; sourceTree = "<group>"; };
+		AD54C55B2BFFC91E00382FB6 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		AD441C8B2BFF617B00E2163A /* SwiftUiChatFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				AD54C55A2BFFC40C00382FB6 /* Extensions */,
+				AD54C5552BFF880D00382FB6 /* Model */,
 				AD441C8C2BFF617B00E2163A /* SwiftUiChatFirebaseApp.swift */,
 				AD441C8E2BFF617B00E2163A /* ContentView.swift */,
+				AD54C5522BFF7E1F00382FB6 /* Views */,
 				AD441C902BFF617D00E2163A /* Assets.xcassets */,
 				AD441C922BFF617D00E2163A /* Preview Content */,
 			);
@@ -65,6 +78,32 @@
 				AD441C932BFF617D00E2163A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD54C5522BFF7E1F00382FB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD54C5532BFF7E5100382FB6 /* TitleRowView.swift */,
+				AD54C5582BFF897C00382FB6 /* MessageBubuleView.swift */,
+				AD0ABEB92C00DF7300BB54BF /* MessageFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD54C5552BFF880D00382FB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD54C5562BFF882700382FB6 /* MessageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD54C55A2BFFC40C00382FB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD54C55B2BFFC91E00382FB6 /* Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0ABEBA2C00DF7300BB54BF /* MessageFieldView.swift in Sources */,
 				AD441C8F2BFF617B00E2163A /* ContentView.swift in Sources */,
 				AD441C8D2BFF617B00E2163A /* SwiftUiChatFirebaseApp.swift in Sources */,
+				AD54C5542BFF7E5100382FB6 /* TitleRowView.swift in Sources */,
+				AD54C55C2BFFC91E00382FB6 /* Extension.swift in Sources */,
+				AD54C5592BFF897C00382FB6 /* MessageBubuleView.swift in Sources */,
+				AD54C5572BFF882700382FB6 /* MessageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
